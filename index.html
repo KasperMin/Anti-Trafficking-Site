@@ -2,8 +2,8 @@
 <html>
 <head>
 
-  <title>The Enlightenment Project</title>
-  <link rel="icon"   href="" />
+  <title>Kasper Simonsen</title>
+  <link rel="icon"   href="ks_logo.svg" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JQUERY NEEDS TO LOAD BEFORE CYCLE2 LIBRARY -->
   <script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
@@ -11,71 +11,76 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="mystyle.css" />
 
+
 </head>
 
 <body>
   <header>
-    <!-- <div class="topHeader"></div> -->
+    <div class="topHeader">
+    </div>
 
-    <img src="./assets/my_logo.svg" id="logo" />
+    <img src="./assets/ks_logo.svg" id="logo" />
 
     <nav class="navigationBar">
       <div id="navContainer">
-        <ul>
+        <ul class="navUl">
+          <li class="navLi"><a href="index.html" class="noDropBar">Home</a></li>
+          <li class="navLi"><a href="" class="noDropBar">About</a></li>
+          <li class="navLi"><a class="navHeader">Traficking</a>
 
-          <li><a href="" class="noDropBar">Home</a></li>
-          <li><a href="" class="noDropBar">About</a></li>
-          <li><a href="">Traficking</a>
             <ul>
-              <li><a href="./traffickingOverview/whatIs.html">Overview</a></li>
-              <li><a>Who trafficks?</a></li>
-              <li class="longText"><a>How to stop trafficking?</a></li>
+              <li class="navLiLi"><a href="./trafficking/whatIsTrafficking/main.html">What is Human Trafficking?</a></li>
+              <li class="navLiLi"><a>Who trafficks?</a></li>
+              <li class="navLiLi"><a>How to stop trafficking?</a></li>
             </ul>
-          </li>
-          <li><a href="">Cambodia</a>
-            <ul>
-              <li><a>History</a></li>
-              <li><a>Solutions</a></li>
-            </ul>
-          </li>
-          <li><a href="">Thailand</a>
-            <ul>
-              <li><a>History</a></li>
-              <li><a>Solutions</a></li>
-            </ul>
-          </li>
-          <li><a href="">Fundraising</a>
-            <ul>
-              <li><a>Sponsorship</a></li>
-              <li><a>Foundation Grants</a></li>
-            </ul>
-          </li>
-          <li><a href="">Case:Blossom</a>
-            <ul>
-              <li><a href="./blossom/background/main.html">Case Background</a></li>
-              <li><a>Vision and Mission</a></li>
-              <li><a>Sponsorship</a></li>
-            </ul>
-          </li>
 
-
+          </li>
+          <li class="navLi"><a class="navHeader">Cambodia</a>
+            <ul>
+              <li class="navLiLi"><a>History</a></li>
+              <li class="navLiLi"><a>Solutions</a></li>
+            </ul>
+          </li>
+          <li class="navLi"><a class="navHeader">Thailand</a>
+            <ul>
+              <li class="navLiLi"><a>Trafficking Overview</a></li>
+              <li class="navLiLi"><a>History</a></li>
+              <li class="navLiLi"><a>Solutions</a></li>
+            </ul>
+          </li>
+          <li class="navLi"><a class="navHeader">Fundraising</a>
+            <ul>
+              <li class="navLiLi"><a href="./fundraising/overview/main.html">What is Fundraising?</a></li>
+              <li class="navLiLi"><a href="./fundraising/sponsorship/main.html">Sponsorship</a></li>
+                <li class="navLiLi"><a href="./fundraising/majorGifts/main.html">Major Gifts</a></li>
+              <li class="navLiLi"><a>Foundation Grants</a></li>
+            </ul>
+          </li>
+          <li class="navLi"><a class="navHeader">Blossom</a>
+            <ul>
+              <li class="navLiLi"><a>Case Background</a></li>
+              <li class="navLiLi"><a href="./blossom/mission/main.html">Vision and Mission</a></li>
+              <li class="navLiLi"><a>Sponsorship</a></li>
+              <li class="navLiLi"><a href="./blossom/culture/main.html">Framing Your Culture</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
 
   </header>
 
-
       <div id="slideShowcontainer">
         <div id="slideShow" class="cycle-slideshow" data-cycle-speed = "1500" data-cycle-timeout="4000">
-
           <div class="cycle-pager"></div>
           <img src="./assets/sad_girl.jpg" alt=""/>
-          <img src="./assets/sad_girl2.jpg" alt="" />
-          <img src="./assets/thailand.jpg" alt=""/>
-          <img src="./assets/fundraising_image.jpg" alt=""/>
-
+          <img src="./assets/sad_girl3.jpg" alt="" />
+          <img src="./assets/sad_girl4.jpg" alt=""/>
+          <img src="./assets/fundraising.jpg" alt=""/>
         </div>
+      </div>
+      <div class="topTitleBar">
+        <h3 class="topTitleBarText">Home</h3>
       </div>
 
       <div id="homeTitle">
@@ -84,8 +89,29 @@
       </div>
     </section>
 
-    <section class="sectionTwo">
+    <section class="counterSection">
       <div id="cambodiaCounterContainer">
+        <div id="cambodiaCounter">0</div>
+        <h1 id="cambodiaCounterText">of prostitutes in Cambodia are under the age of 16 </h1>
+      </div>
+      <div id="raisedMoney"></div>
+      <div id="children"></div>
+
+      <div id="thailandCounterContainer">
+        <div id="cambodiaCounter">0</div>
+        <h1 id="cambodiaCounterText">of prostitutes in Cambodia are under the age of 16 </h1>
+      </div>
+      <div id="raisedMoney"></div>
+      <div id="children"></div>
+
+      <div id="fundraisingCounterContainer">
+        <div id="cambodiaCounter">0</div>
+        <h1 id="cambodiaCounterText">of prostitutes in Cambodia are under the age of 16 </h1>
+      </div>
+      <div id="raisedMoney"></div>
+      <div id="children"></div>
+
+      <div id="blossomCounterContainer">
         <div id="cambodiaCounter">0</div>
         <h1 id="cambodiaCounterText">of prostitutes in Cambodia are under the age of 16 </h1>
       </div>
@@ -94,7 +120,15 @@
     </section>
 
     <section class="sectionThree">
+      <div class="socialIconsContainer">
+        <a href="#" class="fa fa-facebook" ></a>
+        <a href="#" class="fa fa-twitter" ></a>
+        <a href="#" class="fa fa-google" ></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
     </section>
+
+    <img src="./assets/infoTest.png" id="info"/>
 
   <footer>
   </footer>
