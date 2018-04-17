@@ -48,9 +48,9 @@ $(document).ready(function() {
   */
 
   // PAGE AND ARROW CHANGE SUB MENU 2 //
-  let subMenu2Container1 = $(".subMenuType2Container1");
-  let subMenu2Container2 = $(".subMenuType2Container2");
-  let subMenu2Container3 = $(".subMenuType2Container3");
+  let subMenu2Container1 = $(".menuTwoContainer1");
+  let subMenu2Container2 = $(".menuTwoContainer2");
+  let subMenu2Container3 = $(".menuTwoContainer3");
   let arrowText1 = $(".arrowText1");
   let arrowText2 = $(".arrowText2");
   let arrowText3 = $(".arrowText3");
@@ -78,14 +78,12 @@ $(document).ready(function() {
     arrow1.animate( {left: "-60px"} );
     arrow1.addClass("arrowActive")
     arrowText1.addClass("arrowTextActive")
-    subMenu2Container1.addClass("subMenuType2ContainerActive")
   });
 
   subMenu2Container1.on("mouseleave", function() {
-    arrow1.animate( {left: "-72px"} )
+    arrow1.animate( {left: "-72px"},)
     arrow1.removeClass("arrowActive")
     arrowText1.removeClass("arrowTextActive");
-    subMenu2Container1.removeClass("subMenuType2ContainerActive")
 
   });
 
@@ -94,14 +92,12 @@ $(document).ready(function() {
     arrow2.animate( {left: "-60px"});
     arrow2.addClass("arrowActive");
     arrowText2.addClass("arrowTextActive");
-    subMenu2Container2.addClass("subMenuType2ContainerActive");
   });
 
   subMenu2Container2.on("mouseleave", function () {
     arrow2.animate( {left: "-72px"} );
     arrow2.removeClass("arrowActive");
     arrowText2.removeClass("arrowTextActive");
-    subMenu2Container2.removeClass("subMenuType2ContainerActive");
   });
 
   // ARROW 3 //
@@ -109,16 +105,12 @@ $(document).ready(function() {
     arrow3.animate( {left: "-60px"} );
     arrow3.addClass("arrowActive");
     arrowText3.addClass("arrowTextActive");
-    subMenu2Container3.addClass("subMenuType2ContainerActive")
-
   });
 
   subMenu2Container3.on("mouseleave", function() {
     arrow3.animate( {left: "-72"} );
     arrow3.removeClass("arrowActive");
     arrowText3.removeClass("arrowTextActive");
-    subMenu2Container3.removeClass("subMenuType2ContainerActive")
-
   });
 
   // SLAVE PRICE ANIMATION //
@@ -140,17 +132,12 @@ $(document).ready(function() {
 
 
   // BUTTON ANIMATION //
-  let menuOneButton1 = $(".menuOneButton1");
-  let menuOneButton2 = $(".menuOneButton2");
-  let menuOneButton3 = $(".menuOneButton3");
-  let menuOneButton4 = $(".menuOneButton4");
-  let menuOneButton5 = $(".menuOneButton5");
-  let menuOneButton6 = $(".menuOneButton6");
-  let menuOneButtonAnimation1 = $(".menuOneButtonAnimation1");
-  let menuOneButtonAnimation2 = $(".menuOneButtonAnimation2");
-  let menuOneText1 = $(".menuOneText1")
-  let menuOneText2 = $(".menuOneText2")
-
+  let menuOneButton1 = $(".menuOneButton1"), menuOneButton2 = $(".menuOneButton2"), menuOneButton3 = $(".menuOneButton3");
+  let menuOneButton4 = $(".menuOneButton4"), menuOneButton5 = $(".menuOneButton5")
+  let menuOneButtonAnimation1 = $(".menuOneButtonAnimation1"), menuOneButtonAnimation2 = $(".menuOneButtonAnimation2"), menuOneButtonAnimation3 = $(".menuOneButtonAnimation3")
+  let menuOneButtonAnimation4 = $(".menuOneButtonAnimation4"), menuOneButtonAnimation5 = $(".menuOneButtonAnimation5"), menuOneButtonAnimation6 = $(".menuOneButtonAnimation6")
+  let menuOneText1 = $(".menuOneText1"), menuOneText2 = $(".menuOneText2"), menuOneText3 = $(".menuOneText3")
+  let menuOneText4 = $(".menuOneText4"), menuOneText5 = $(".menuOneText5")
   let menuOneButtonActive = false;
 
   menuOneButton1.on("mouseover", function() {
@@ -167,7 +154,7 @@ $(document).ready(function() {
       menuOneButtonAnimation1.animate( {width: "0px"} );
       menuOneText1.animate( {left: "-=15px"} );
     }
-  })
+  });
 
   menuOneButton2.on("mouseover", function() {
     if (menuOneButtonActive === false) {
@@ -183,6 +170,110 @@ $(document).ready(function() {
       menuOneButtonAnimation2.animate( {width: "0px"} );
       menuOneText2.animate( {left: "-=15px"} );
     }
+  });
+
+  menuOneButton3.on("mouseover", function() {
+    if (menuOneButtonActive === false) {
+      menuOneButtonActive = true;
+      menuOneButtonAnimation3.animate( {width: "30px"} );
+      menuOneText3.animate( {left: "+=15px"})
+    }
+  });
+
+  menuOneButton3.on("mouseleave", function() {
+    if (menuOneButtonActive === true) {
+      menuOneButtonActive = false;
+      menuOneButtonAnimation3.animate( {width: "0"} );
+      menuOneText3.animate( {left: "-=15px"} );
+    }
+  });
+
+  menuOneButton4.on("mouseover", function() {
+    if (menuOneButtonActive === false) {
+      menuOneButtonActive = true;
+      menuOneButtonAnimation4.animate( {width: "30px"} );
+      menuOneText4.animate( {left: "+=15px"} );
+    }
+  })
+
+  menuOneButton4.on("mouseleave", function() {
+    if (menuOneButtonActive === true) {
+      menuOneButtonActive = false;
+      menuOneButtonAnimation4.animate( {width: "0"});
+      menuOneText4.animate( {left: "-=15px"});
+    }
+  })
+
+  menuOneButton5.on("mouseover", function() {
+    if (menuOneButtonActive === false) {
+      menuOneButtonActive = true;
+      menuOneButtonAnimation5.animate( {width: "30px"} );
+      menuOneText5.animate( {left: "+=15px"} );
+    }
+  })
+
+  menuOneButton5.on("mouseleave", function() {
+    if (menuOneButtonActive === true) {
+      menuOneButtonActive = false;
+      menuOneButtonAnimation5.animate( {width: "0"});
+      menuOneText5.animate( {left: "-=15px"});
+    }
+  })
+
+  // SIDE MENU ANIMATION //
+  let sideMenuImg1 = $(".sideMenuImg1"), sideMenuImg2 = $(".sideMenuImg2"), sideMenuImg3 = $(".sideMenuImg3"), sideMenuImg4 = $(".sideMenuImg4")
+  let sideMenuImgText1 = $(".sideMenuImgText1"), sideMenuImgText2 = $(".sideMenuImgText2"), sideMenuImgText3 = $(".sideMenuImgText3"), sideMenuImgText4 = $(".sideMenuImgText4")
+
+  sideMenuImg1.on("mouseover", function() {
+    sideMenuImg1.animate( {width: "90%", height: "90%"}, "fast");
+    // sideMenuImg1.addClass("sideMenuBorderShadow"); //
+    sideMenuImgText1.addClass("sideMenuImgTextColor");
+
+  });
+
+  sideMenuImg1.on("mouseleave", function() {
+    sideMenuImg1.animate( {width: "85%", height: "85%"}, "fast");
+    // sideMenuImgImg1.removeClass("sideMenuImgTextColor"); //
+    sideMenuImgText1.removeClass("sideMenuImgTextColor")
+  })
+
+  sideMenuImg2.on("mouseover", function() {
+    sideMenuImg2.animate( {width: "90%", height: "90%"}, "fast");
+    // sideMenuImg1.addClass("sideMenuBorderShadow"); //
+    sideMenuImgText2.addClass("sideMenuImgTextColor");
+
+  });
+
+  sideMenuImg2.on("mouseleave", function() {
+    sideMenuImg2.animate( {width: "85%", height: "85%"}, "fast");
+    // sideMenuImgImg1.removeClass("sideMenuImgTextColor"); //
+    sideMenuImgText2.removeClass("sideMenuImgTextColor")
+  })
+
+  sideMenuImg3.on("mouseover", function() {
+    sideMenuImg3.animate( {width: "90%", height: "90%"}, "fast");
+    // sideMenuImg1.addClass("sideMenuBorderShadow"); //
+    sideMenuImgText3.addClass("sideMenuImgTextColor");
+
+  });
+
+  sideMenuImg3.on("mouseleave", function() {
+    sideMenuImg3.animate( {width: "85%", height: "85%"}, "fast");
+    // sideMenuImgImg1.removeClass("sideMenuImgTextColor"); //
+    sideMenuImgText3.removeClass("sideMenuImgTextColor")
+  })
+
+  sideMenuImg4.on("mouseover", function() {
+    sideMenuImg4.animate( {width: "90%", height: "90%"}, "fast");
+    // sideMenuImg1.addClass("sideMenuBorderShadow"); //
+    sideMenuImgText4.addClass("sideMenuImgTextColor");
+
+  });
+
+  sideMenuImg4.on("mouseleave", function() {
+    sideMenuImg4.animate( {width: "85%", height: "85%"}, "fast");
+    // sideMenuImgImg1.removeClass("sideMenuImgTextColor"); //
+    sideMenuImgText4.removeClass("sideMenuImgTextColor")
   })
 
   // SOURCE ANIMATION //
