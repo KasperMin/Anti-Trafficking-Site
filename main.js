@@ -17,7 +17,7 @@ $(document).ready(function() {
 
       function startCounter() {
         cambodiaCounterEl.html(counter);
-        if (counter < 15000) {
+        if (counter < 10000) {
           counter++;
         } else {
           clearInterval(interval)
@@ -48,16 +48,13 @@ $(document).ready(function() {
   */
 
   // PAGE AND ARROW CHANGE SUB MENU 2 //
-  let subMenu2Container1 = $(".menuTwoContainer1");
-  let subMenu2Container2 = $(".menuTwoContainer2");
-  let subMenu2Container3 = $(".menuTwoContainer3");
-  let arrowText1 = $(".arrowText1");
-  let arrowText2 = $(".arrowText2");
-  let arrowText3 = $(".arrowText3");
-  let arrow1 = $(".arrow1");
-  let arrow2 = $(".arrow2");
-  let arrow3 = $(".arrow3");
-
+  let subMenu2Container1 = $(".menuTwoContainer1"), subMenu2Container2 = $(".menuTwoContainer2"), subMenu2Container3 = $(".menuTwoContainer3");
+  let subMenu2Container4 = $(".menuTwoContainer4"), subMenu2Container5 = $(".menuTwoContainer5"), subMenu2Container6 = $(".menuTwoContainer6");
+  let subMenu2Container7 = $(".menuTwoContainer7"), subMenu2Container8 = $(".menuTwoContainer8")
+  let arrowText1 = $(".arrowText1"), arrowText2 = $(".arrowText2"), arrowText3 = $(".arrowText3"), arrowText4 = $(".arrowText4")
+  let arrowText5 = $(".arrowText5"), arrowText6 = $(".arrowText6"), arrowText7 = $(".arrowText7"), arrowText8 = $(".arrowText8");
+  let arrow1 = $(".arrow1"), arrow2 = $(".arrow2"), arrow3 = $(".arrow3"), arrow4 = $(".arrow4"), arrow5 = $(".arrow5")
+  let arrow6 = $(".arrow6"), arrow7 = $(".arrow7"), arrow8 = $(".arrow8");
   // let subMenu2Header1 = $(".subMenuType2Header1"); //
 
 
@@ -75,13 +72,13 @@ $(document).ready(function() {
 
   // ARROW 1 //
   subMenu2Container1.on("mouseover", function() {
-    arrow1.animate( {left: "-60px"} );
+    arrow1.animate( {left: "20"} );
     arrow1.addClass("arrowActive")
     arrowText1.addClass("arrowTextActive")
   });
 
   subMenu2Container1.on("mouseleave", function() {
-    arrow1.animate( {left: "-72px"},)
+    arrow1.animate( {left: "0px"},)
     arrow1.removeClass("arrowActive")
     arrowText1.removeClass("arrowTextActive");
 
@@ -89,29 +86,98 @@ $(document).ready(function() {
 
   // ARROW 2 //
   subMenu2Container2.on("mouseover", function() {
-    arrow2.animate( {left: "-60px"});
+    arrow2.animate( {left: "20"});
     arrow2.addClass("arrowActive");
     arrowText2.addClass("arrowTextActive");
   });
 
   subMenu2Container2.on("mouseleave", function () {
-    arrow2.animate( {left: "-72px"} );
+    arrow2.animate( {left: "0px"} );
     arrow2.removeClass("arrowActive");
     arrowText2.removeClass("arrowTextActive");
   });
 
   // ARROW 3 //
   subMenu2Container3.on("mouseover", function () {
-    arrow3.animate( {left: "-60px"} );
+    arrow3.animate( {left: "20"} );
     arrow3.addClass("arrowActive");
     arrowText3.addClass("arrowTextActive");
   });
 
   subMenu2Container3.on("mouseleave", function() {
-    arrow3.animate( {left: "-72"} );
+    arrow3.animate( {left: "0"} );
     arrow3.removeClass("arrowActive");
     arrowText3.removeClass("arrowTextActive");
   });
+
+
+  // ARROW 4 //
+  subMenu2Container4.on("mouseover", function () {
+    arrow4.animate( {left: "20px"} );
+    arrow4.addClass("arrowActive");
+    arrowText4.addClass("arrowTextActive");
+  });
+
+  subMenu2Container4.on("mouseleave", function() {
+    arrow4.animate( {left: "0"} );
+    arrow4.removeClass("arrowActive");
+    arrowText4.removeClass("arrowTextActive");
+  });
+
+  // ARROW 5//
+  subMenu2Container5.on("mouseover", function () {
+    arrow5.animate( {left: "20px"} );
+    arrow5.addClass("arrowActive");
+    arrowText5.addClass("arrowTextActive");
+  });
+
+  subMenu2Container5.on("mouseleave", function() {
+    arrow5.animate( {left: "0px"} );
+    arrow5.removeClass("arrowActive");
+    arrowText5.removeClass("arrowTextActive");
+  });
+
+
+  // ARROW 6 //
+  subMenu2Container6.on("mouseover", function () {
+    arrow6.animate( {left: "20"} );
+    arrow6.addClass("arrowActive");
+    arrowText6.addClass("arrowTextActive");
+  });
+
+  subMenu2Container6.on("mouseleave", function() {
+    arrow6.animate( {left: "0"} );
+    arrow6.removeClass("arrowActive");
+    arrowText6.removeClass("arrowTextActive");
+  });
+
+  // ARROW 7 //
+  subMenu2Container7.on("mouseover", function () {
+    arrow7.animate( {left: "20"} );
+    arrow7.addClass("arrowActive");
+    arrowText7.addClass("arrowTextActive");
+  });
+
+  subMenu2Container7.on("mouseleave", function() {
+    arrow7.animate( {left: "0"} );
+    arrow7.removeClass("arrowActive");
+    arrowText7.removeClass("arrowTextActive");
+  });
+
+  // ARROW 8 //
+  subMenu2Container8.on("mouseover", function () {
+    arrow8.animate( {left: "20"} );
+    arrow8.addClass("arrowActive");
+    arrowText8.addClass("arrowTextActive");
+  });
+
+  subMenu2Container8.on("mouseleave", function() {
+    arrow8.animate( {left: "0px"} );
+    arrow8.removeClass("arrowActive");
+    arrowText8.removeClass("arrowTextActive");
+  });
+
+
 
   // SLAVE PRICE ANIMATION //
   windowEl.scroll(function (event) {
