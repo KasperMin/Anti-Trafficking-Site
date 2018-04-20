@@ -18,24 +18,31 @@
 
 
   <header>
+    <img src="./assets/ks_logo.svg" id="logo" />
+
     <div id="navPlaceHolder">
-
-
     </div>
+    <script>
+    $(function(){
+      $("#navPlaceHolder").load("navBar.html");
+    });
+    </script>
+
 
   </header>
-<!--
     <div class="topHeader">
     </div>
-
-    <img src="./assets/ks_logo.svg" id="logo" />
 
     <nav class="navigationBar">
       <div id="navContainer">
         <ul class="navUl">
           <li class="navLi"><a href="index.html" class="noDropBar">Home</a></li>
-          <li class="navLi"><a href="" class="noDropBar">About</a></li>
-          <li class="navLi"><a class="navHeader">Traficking</a>
+          <li class="navLi"><a href="" class="noDropBar">
+            About
+          </a></li>
+          <li class="navLi"><a class="navHeader">
+            Trafficking
+          </a>
 
             <ul>
               <li class="navLiLi"><a href="./trafficking/whatIsTrafficking/main.html">What is Human Trafficking?</a></li>
@@ -86,9 +93,6 @@
         </ul>
       </div>
     </nav>
-
--->
-
 
       <div id="slideShowcontainer">
         <div id="slideShow" class="cycle-slideshow" data-cycle-speed = "1500" data-cycle-timeout="4000">
