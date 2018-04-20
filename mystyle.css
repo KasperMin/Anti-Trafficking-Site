@@ -1310,7 +1310,7 @@ ul li {
 
 #percentCounterExtra {
 	position: absolute;
-	bottom: 41%;
+	bottom: 41.5%;
 	left: 57%;
 	font-size: 24px;
 }
@@ -1429,9 +1429,8 @@ footer {
 #logoFooter {
 	width: 170px;
 	position: relative;
-	bottom: -315px;
-	left: 3%;
-	z-index: 1000;
+	top: 40px;
+	left: 40px;
 }
 
 #contactContainer {
