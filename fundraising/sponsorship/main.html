@@ -137,11 +137,14 @@
   <section class="whiteSpaceNormal">
   </section>
 
-  <footer>
-  </footer>
+  <div id="footerPlaceHolder">
+    
+  </div>
 
   <script>
-  $(function(){
+
+  $(document).ready(function(){
+    $("#footerPlaceHolder").load("../../footer.html");
     $("#navPlaceHolder").load("navBar.html");
   });
   </script>
