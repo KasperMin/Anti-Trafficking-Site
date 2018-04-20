@@ -1429,8 +1429,9 @@ footer {
 #logoFooter {
 	width: 170px;
 	position: relative;
-	top: 40px;
-	left: 40px;
+	bottom: -315px;
+	left: 3%;
+	z-index: 1000;
 }
 
 #contactContainer {
