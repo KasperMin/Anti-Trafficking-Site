@@ -1298,15 +1298,11 @@ ul li {
 	width: 25%;
 	padding: 30px 0;
 	font-size: 30px;
+	background: #ff1493;
 }
-
-#cambodiaCounter {
-
-}
-
 
 #counterContainer2 {
-	background: #ff1493;
+	background: white;
 }
 
 #counterContainer3 {
@@ -1315,6 +1311,16 @@ ul li {
 
 #counterContainer4 {
 	background: #fffb9c;
+}
+
+#counterText {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#counterImg {
+	width: 40%;
+	margin-left: 7%;
 }
 
 /* SLAVE PRICE ANIMATION BAR */
@@ -1382,13 +1388,42 @@ ul li {
 	height: 300px;
 }
 
-#sourcesHeader {
+#sourcesHeader1,
+#sourcesHeader2,
+#sourcesHeader3,
+#sourcesHeader4,
+#sourcesHeader5,
+#sourcesHeader6,
+#sourcesHeader7 {
 	text-align: center;
 	margin-bottom: 15px;
+	background: #3E5DFF;
+	padding: 10px;
+}
+
+#sourcesHeader2 {
+	background: #ff1493;
+}
+#sourcesHeader3 {
+	background: #fffb9c;
+}
+#sourcesHeader4 {
+	background:#5941bf;
+}
+#sourcesHeader5 {
+	background: #63DEE5;
+}
+#sourcesHeader6 {
+	 background: #ff8b10;
+}
+#sourcesHeader7 {
+	background: #42bf8f;
 }
 
 #sources {
 	padding: 10px;
+	text-align: left;
+	font-size: 18px;
 }
 
 footer {

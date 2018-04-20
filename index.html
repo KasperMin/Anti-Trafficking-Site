@@ -15,7 +15,16 @@
 </head>
 
 <body>
+
+
   <header>
+    <div id="navPlaceHolder">
+
+
+    </div>
+
+  </header>
+<!--
     <div class="topHeader">
     </div>
 
@@ -64,11 +73,22 @@
               <li class="navLiLi"><a href="./blossom/culture/main.html">Framing Your Culture</a></li>
             </ul>
           </li>
+          <li class="navLi"><a class="navHeader">Sources</a>
+            <ul>
+              <li class="navLiLi"><a href="./sources/sourcesTrafficking.html">
+                Trafficking Sources
+              </a></li>
+              <li class="navLiLi"><a href="./blossom/mission/main.html">
+                Fundraising Sources
+              </a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
 
-  </header>
+-->
+
 
       <div id="slideShowcontainer">
         <div id="slideShow" class="cycle-slideshow" data-cycle-speed = "1500" data-cycle-timeout="4000">
@@ -90,27 +110,29 @@
     </section>
 
     <section class="counterSection">
+
       <div id="counterContainer1">
-        <img src="assets/graphicBride.png" />
-        <div id="cambodiaCounter">0</div>
-        <h2 id="counterText">
-          is the price Chinese Men pay for a trafficked Cambodian wife 
-        </h2>      </div>
-      <div id="counterContainer2">
-        <img src="assets/graphicBride.png" />
-        <div id="cambodiaCounter">0</div>
+        <img src="assets/graphicGirl1.png" id="counterImg"/>
+        <div id="childCounter">0</div>
         <h2 id="counterText">
           of prostitutes in Cambodia are under the age of 16
         </h2>
       </div>
+      <div id="counterContainer2">
+        <img src="assets/graphicBride.png" id="counterImg"/>
+        <div id="brideCounter">0</div>
+        <h2 id="counterText">
+          is the price Chinese Men pay for a trafficked Cambodian wife
+        </h2>
+      </div>
       <div id="counterContainer3">
-        <img src="assets/graphicBride.png" />
+        <img src="assets/graphicMoney.png" id="counterImg"/>
         <div id="cambodiaCounter">0</div>
         <h2 id="counterText">
           of prostitutes in Cambodia are under the age of 16
         </h2>      </div>
       <div id="counterContainer4">
-        <img src="assets/graphicBride.png" />
+        <img src="assets/graphicSlave.png" id="counterImg"/>
         <div id="cambodiaCounter">0</div>
         <h2 id="counterText">
           of prostitutes in Cambodia are under the age of 16
@@ -132,7 +154,11 @@
   <footer>
   </footer>
 
-
+  <script>
+  $(function(){
+    $("#navPlaceHolder").load("navBar.html");
+  });
+  </script>
   <script src="main.js"></script>
 </body>
 

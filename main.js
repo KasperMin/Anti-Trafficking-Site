@@ -1,10 +1,11 @@
 // - If you are at the footer When the first image switch happens it automatically jump up to the head //
 $(document).ready(function() {
-  let cambodiaCounterEl = $("#cambodiaCounter");
+  let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter")
   let documentEl = $(document);
   let windowEl = $(window);
 
-  let counter = 0
+  let counter = 0;
+  let counter2 = 0;
   let scrollCountActivated = false;
   let scrollParaActivated = false;
   let scrollPriceActivated = false;
@@ -14,38 +15,51 @@ $(document).ready(function() {
   documentEl.on("scroll", function() {
     if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
       scrollCountActivated = true;
+      console.log("1111")
 
       function startCounter() {
-        cambodiaCounterEl.html(counter);
-        if (counter < 10000) {
+        childCounterEl.html(counter);
+        if (counter < 5250) {
           counter++;
         } else {
           clearInterval(interval)
         }
       } // END OF START COUNTER FUNCTION //
 
+
       for (let i = 0; i < 100; i++) {
         interval = setInterval(startCounter, 1)
       }
+
 
 
      }; // END OF IF SCROLL STATEMENT //
 
   }); // END OF SCROLL FUNCITON //
 
-  /*
-  windowEl.scroll(function (event) {
-    let scroll = windowEl.scrollTop();
-    let paraBoxElement = $("#paraBoxDarkAnimate");
+  if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
+    scrollCountActivated = true;
+    console.log("2222")
+    function startCounter() {
+      brideCounterEl.html(counter2);
+      if (counter2 < 10000) {
+        counter2++;
+      } else {
+        clearInterval(interval)
+      }
+    } // END OF START COUNTER FUNCTION //
 
-    if (scroll > 450 & scrollParaActivated === false) {
-      scrollParaActivated = true;
-      paraBoxElement.animate({width: '90%', opacity: '0.9'}, "slow");
-      document.getElementById("paraBoxTextContainerAnimate").id = "show";
-      document.getElementById("paraBoxButtonBoxAnimate").id = "show";
+
+    for (let i = 0; i < 100; i++) {
+      interval = setInterval(startCounter, 1)
     }
-  });
-  */
+
+       }; // END OF IF SCROLL STATEMENT //
+
+    }); // END OF SCROLL FUNCITON //
+
+
+
 
   // PAGE AND ARROW CHANGE SUB MENU 2 //
   let subMenu2Container1 = $(".menuTwoContainer1"), subMenu2Container2 = $(".menuTwoContainer2"), subMenu2Container3 = $(".menuTwoContainer3");
