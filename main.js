@@ -1,12 +1,12 @@
 // - If you are at the footer When the first image switch happens it automatically jump up to the head //
 $(document).ready(function() {
-  let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter")
+  let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter"), profitCounterEl = $("#profitCounter"), percentCounterEl = $("#percentCounter")
   let documentEl = $(document);
   let windowEl = $(window);
 
-  let counter = 0, counter2 = 0;
-  let scrollCountActivated = false, scrollCountActivated2 = false;
-  let interval, interval2
+  let counter = 0, counter2 = 0, counter3 = 0, counter4 = 0;
+  let scrollCountActivated = false, scrollCountActivated2 = false, scrollCountActivated3 = false, scrollCountActivated4 = false
+  let interval, interval2, interval3, interval4;
 
   documentEl.on("scroll", function() {
 
@@ -20,25 +20,53 @@ $(document).ready(function() {
           clearInterval(interval)
         }
       }
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 50; i++) {
         interval = setInterval(startCounter, 1)
       }
     }; // END OF CHILD IF STATEMENT //
 
      if (documentEl.scrollTop() > 100 & scrollCountActivated2 === false) {
        scrollCountActivated2 = true;
-         function startCounter() {
-           brideCounterEl.html(counter2);
-           if (counter2 < 10000) {
-             counter2++;
-           } else {
-             clearInterval(interval2)
-           }
-          }
-         for (let i = 0; i < 100; i++) {
-           interval2 = setInterval(startCounter, 1)
+       function startCounter() {
+         brideCounterEl.html(counter2);
+         if (counter2 < 10000) {
+           counter2++;
+         } else {
+           clearInterval(interval2)
          }
+        }
+       for (let i = 0; i < 100; i++) {
+         interval2 = setInterval(startCounter, 1)
+       }
        }; // END OF BRIDE IF  STATEMENT //
+
+       if (documentEl.scrollTop() > 100 & scrollCountActivated3 === false) {
+         scrollCountActivated3 = true;
+         function startCounter() {
+           profitCounterEl.html(counter3);
+           if (counter3 < 15) {
+             counter3++;
+           } else {
+             clearInterval(interval3)
+           }
+         };
+         interval3 = setInterval(startCounter,175)
+
+       }; // END PROFIT IF STATEMENT //
+
+       if (documentEl.scrollTop() > 100 & scrollCountActivated4 === false) {
+         scrollCountActivated4 = true;
+         function startCounter() {
+           percentCounterEl.html(counter4);
+           if (counter4 < 99) {
+             counter4++;
+           } else {
+             clearInterval(interval4)
+           }
+         };
+         interval4 = setInterval(startCounter,1)
+
+       }; // END PERCENT IF STATEMENT //
 
     }); // END OF SCROLL FUNCITON //
 
