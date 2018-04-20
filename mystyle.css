@@ -31,8 +31,6 @@ time, mark, audio, video {
 			   	box-sizing: border-box;
 }
 
-
-
 /* HEADER SIZES */
 
 h1 {
@@ -67,67 +65,16 @@ a {
 }
 
 #logo {
-  height: 120px;
-  width: 150px;
+  width: 180px;
 	float: left;
 	position: absolute;
-	top: 90px;
+	top: 50px;
 	z-index: 1000;
-	left: 30px;
+	left: 3%;
 }
 
-/* TOP HEADER + SOCIAL MEDIA ICONS */
+/* TOP BAR + SOCIAL MEDIA ICONS */
 
-.topHeader {
-	background: #333333;
-	opacity: .8;
-	height: 45px;
-	width: 100%;
-}
-
-.socialIconsContainer {
-	background: #333333;
-	width: 60px;
-	float:left;
-}
-
-.fa:hover {
-		opacity: .7;
-}
-
-.fa {
-	padding: 10px;
-  font-size: 20px;
-  width: 20px;
-  text-align: center;
-  text-decoration: none;
-	border-radius: 50%;
-	display: block;
-	margin:5px;
-
-}
-
-.fa-facebook {
-	background: #3B5998;
- 	color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-instagram {
-	background: -webkit-linear-gradient(to right bottom, #8e9eab, #eef2f3);
-  background:    -moz-linear-gradient(to right bottom, #8e9eab, #eef2f3);
-  background:         linear-gradient(to right bottom, #f39f4c, #551A8B);
-  color: white;
-}
 
 /* NAVBAR */
 #line {
@@ -300,38 +247,35 @@ ul li:hover ul  li {
 /* TOP TITLE BAR AND INTRO TYPE 1 */
 
 
-.topTitleBar {
+.topTitleBar,
+.topTitleBar2 {
 	height: 50px;
 	line-height: 50px;
-	background: #42bf8f;;
+	background: #42bf8f;
 	margin-bottom: 60px;
+}
 
+.topTitleBar2 {
+	margin-bottom: 0px;
 }
 
 .topTitleBarText1,
-.topTitleBarText2,
-.topTitleBarText3 {
-	float: right;
-	margin-right: 30px;
+.topTitleBarText2 {
+	margin-left: 3%;
 	vertical-align: middle;
-	right: 0;
 	z-index: 1000;
 	color: white;
+	display: inline-block;
 }
 
-.topTitleBarText2,
-.topTitleBarText3 {
-	float: left;
-	margin-left: 2%;
+.topTitleBarText2 {
+	float: right;
+	margin-right: 3%;
 }
 
-.topTitleBarText:hover,
+.topTitleBarText1:hover,
 .topTitleBarText2:hover {
 	color:#696969;
-}
-
-.topTitleBarText3:hover {
-	color: white
 }
 
 .topTitleBarTextBack {
@@ -339,10 +283,6 @@ ul li:hover ul  li {
 	float: left;
 	text-decoration: none;
 	color: white;
-}
-
-.topTitleBarTextBack:hover {
-	color: #333333;
 }
 
 .introOneBoxContainer {
@@ -618,18 +558,33 @@ ul li:hover ul  li {
 
 /* SIDE MENU */
 
-.sideMenuContainer {
+.sideMenuContainer,
+.sideMenuContainerSocial {
 	float: right;
 	width: 30%;
 	margin-right: 1%;
 }
 
-.sideMenuHeader {
+.sideMenuHeader,
+.sideMenuHeaderSocial {
 	text-align: center;
 	background: #42bf8f;
 	padding: 20px;
+}
+
+.sideMenuContainerSocial {
+	border: 1px solid;
+	text-align:center;
+	float: left;
+	position: relative;
+	bottom: 140px;
 
 }
+
+.sideMenuHeaderSocial {
+	background: #3B5998;
+}
+
 .sideMenu {
 	margin: 0 auto;
 	margin-top: 50px;
@@ -1431,4 +1386,97 @@ footer {
   height: 200px;
 	position: relative;
 	clear:both;
+	color: white;
+}
+
+#logoFooter {
+	width: 170px;
+	position: relative;
+	top: 40px;
+	left: 40px;
+}
+
+#contactContainer {
+	float: left;
+	font-size: 16px;
+	line-height: 1.5;
+	height: 200px;
+	width: 25%;
+}
+
+#contactHeader,
+#contactHeaderMedia {
+	margin-top: 40px;
+}
+
+#postText {
+	width: 85%;
+}
+
+#postText:hover {
+	color: #42bf8f;
+}
+
+#contractTextSmall {
+	border-bottom: 1px solid white;
+	font-size: 12px;
+	width: 85%;
+	padding-bottom: 5px;
+}
+
+#finalLine {
+	height: 60px;
+	background: #353840;
+	float: left;
+	width: 100%;
+	line-height: 60px;
+}
+
+#finalLineText {
+	vertical-align: middle;
+	float: right;
+	margin-right: 3%;
+}
+
+.socialIconsContainer {
+	position: relative;
+	top: 20px;
+	right: 5px;
+}
+
+.fa:hover {
+	opacity: .5;
+}
+
+.fa {
+	padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 50%;
+	display: inline-block;
+	margin:5px;
+}
+
+.fa-facebook {
+	background: #3B5998;
+ 	color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+	background: -webkit-linear-gradient(to right bottom, #8e9eab, #eef2f3);
+  background:    -moz-linear-gradient(to right bottom, #8e9eab, #eef2f3);
+  background:         linear-gradient(to right bottom, #f39f4c, #551A8B);
+  color: white;
 }

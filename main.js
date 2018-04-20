@@ -4,19 +4,14 @@ $(document).ready(function() {
   let documentEl = $(document);
   let windowEl = $(window);
 
-  let counter = 0;
-  let counter2 = 0;
-  let scrollCountActivated = false;
-  let scrollParaActivated = false;
-  let scrollPriceActivated = false;
-  let breakActivated = false;
-  let interval;
+  let counter = 0, counter2 = 0;
+  let scrollCountActivated = false, scrollCountActivated2 = false;
+  let interval, interval2
 
   documentEl.on("scroll", function() {
+
     if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
       scrollCountActivated = true;
-      console.log("1111")
-
       function startCounter() {
         childCounterEl.html(counter);
         if (counter < 5250) {
@@ -24,41 +19,28 @@ $(document).ready(function() {
         } else {
           clearInterval(interval)
         }
-      } // END OF START COUNTER FUNCTION //
-
-
+      }
       for (let i = 0; i < 100; i++) {
         interval = setInterval(startCounter, 1)
       }
+    }; // END OF CHILD IF STATEMENT //
 
-
-
-     }; // END OF IF SCROLL STATEMENT //
-
-  }); // END OF SCROLL FUNCITON //
-
-  if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
-    scrollCountActivated = true;
-    console.log("2222")
-    function startCounter() {
-      brideCounterEl.html(counter2);
-      if (counter2 < 10000) {
-        counter2++;
-      } else {
-        clearInterval(interval)
-      }
-    } // END OF START COUNTER FUNCTION //
-
-
-    for (let i = 0; i < 100; i++) {
-      interval = setInterval(startCounter, 1)
-    }
-
-       }; // END OF IF SCROLL STATEMENT //
+     if (documentEl.scrollTop() > 100 & scrollCountActivated2 === false) {
+       scrollCountActivated2 = true;
+         function startCounter() {
+           brideCounterEl.html(counter2);
+           if (counter2 < 10000) {
+             counter2++;
+           } else {
+             clearInterval(interval2)
+           }
+          }
+         for (let i = 0; i < 100; i++) {
+           interval2 = setInterval(startCounter, 1)
+         }
+       }; // END OF BRIDE IF  STATEMENT //
 
     }); // END OF SCROLL FUNCITON //
-
-
 
 
   // PAGE AND ARROW CHANGE SUB MENU 2 //
