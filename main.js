@@ -62,9 +62,6 @@ $(document).ready(function() {
            } else {
              clearInterval(interval4)
            }
-           for (let i = 0; i < 10; i++) {
-             interval4 = setInterval(startCounter, 1)
-           }
          };
          interval4 = setInterval(startCounter,1)
 
