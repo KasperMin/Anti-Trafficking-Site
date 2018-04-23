@@ -103,7 +103,7 @@ nav {
 	display: table;
 	margin: 0 auto;
 	border-bottom: 1.5px solid #42bf8f;
-
+	min-width: 800px;
 }
 
 
