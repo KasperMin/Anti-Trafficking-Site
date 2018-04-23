@@ -22,6 +22,8 @@ time, mark, audio, video {
 
 * {
 	font-size: 15px;
+
+
 }
 
 *:before,
@@ -61,7 +63,11 @@ h6 {
 a {
 	text-decoration: none;
 	color:inherit;
+}
 
+#link {
+	text-decoration: underline;
+	color: blue;
 }
 
 #logo {
@@ -520,7 +526,8 @@ ul li:hover ul  li {
 
 #menuOneTextBreakerRight {
 	height: 250px;
-	width: 82%;
+	line-height: 250px;
+	width: 85%;
 	background: #FF1493;
 	margin: 60px 0;
 	float: right;
@@ -529,11 +536,24 @@ ul li:hover ul  li {
 
 #menuOneTextBreakerLeft {
 	height: 250px;
-	width: 82%;
+	line-height: 250px;
+	width: 85%;
 	background: #38FFE8;
+	float: left;
 	clear: left;
 	margin: 60px 0;
+}
+
+.menuOneBreakerOuoteTextContainer {
+	width: 90%;
+	margin-left: 5%;
+	vertical-align: middle;
 	display: inline-block;
+}
+
+#menuOneBreakerQuoteText {
+	color: white;
+	line-height: 1.5;
 }
 
 #centerImg,
@@ -554,6 +574,76 @@ ul li:hover ul  li {
 	float: left;
 	position: relative;
 	top: 100px;
+}
+
+/* SIDE ANIMATION */
+
+.menuOneBreakerAnimationContainer {
+	background: #604EFF;
+	clear:both;
+	display: inline-block;
+	width: 100%;
+	margin: 60px 0;
+}
+
+#headerContainer {
+	height: 100px;
+	background: #D4C6FF;
+}
+
+#sideAnimationHeader {
+	padding: 2%;
+}
+
+#sideAnimationSubHeader {
+	margin-left: 2%;
+}
+
+#sideAnimation {
+	height: 40px;
+	line-height: 40px;
+	margin-left: 2%;
+}
+
+#sideAnimationHeader1,
+#sideAnimationHeader2,
+#sideAnimationHeader3,
+#sideAnimationHeader4,
+#sideAnimationHeader5,
+#sideAnimationHeader6,
+#sideAnimationHeader7 {
+	margin: 10px 0;
+	float: left;
+	clear: left;
+	font-size: 18px;
+	font-weight: bold;
+	width: 312px;
+}
+
+#sideAnimationBar1,
+#sideAnimationBar2,
+#sideAnimationBar3,
+#sideAnimationBar4,
+#sideAnimationBar5,
+#sideAnimationBar6,
+#sideAnimationBar7 {
+	height: 40px;
+	margin: 10px;
+	background: black;
+	display: inline-block;
+	float: left;
+
+}
+
+#animationBarText1,
+#animationBarText2,
+#animationBarText3,
+#animationBarText4,
+#animationBarText5,
+#animationBarText6,
+#animationBarText7 {
+	color: white;
+	margin-left: 20px;
 }
 
 /* SIDE MENU */
@@ -620,6 +710,7 @@ ul li:hover ul  li {
 
 .sideMenuImgTextColor {
 	color: #42bf8f;
+	font-weight: bold;
 }
 /* SUB-MENU BOX TYPE 2 */
 
@@ -752,7 +843,7 @@ ul li:hover ul  li {
 .arrowContainer {
 	position: absolute;
 	bottom: 65px;
-	margin-left: 80px;
+	margin-left: 7%;
 }
 
 .arrowText1,
@@ -811,7 +902,8 @@ ul li:hover ul  li {
 	border-left: 5px solid #696969;
 	float: left;
 	/* color: #696969; */
-
+	max-width: 800px;
+	min-width: 700px;
 }
 
 .menuTwoTextContainerRight {
@@ -821,7 +913,7 @@ ul li:hover ul  li {
 	padding-right:3%;
 	border-right: 5px solid #696969;
 	/* color: #696969; */
-
+		max-width: 800px;
 }
 
 #menuTwoTextHeader {
@@ -832,12 +924,16 @@ ul li:hover ul  li {
 
 #menuTwoTextSection {
 	clear:both;
+	display: table;
+	width: 100%;
+	min-width: 1200px;
 }
 
 #menuTwoSideBoxContainerRight,
 #menuTwoSideBoxContainerLeft {
 	width: 27%;
 	height: 650px;
+	height: 100%;
 	float: right;
 	margin-right: 2%;
 	text-align: center;
@@ -857,6 +953,7 @@ ul li:hover ul  li {
 .menuTwoSideBoxContentPink {
 	background: #ff1493;
 	height: 100%;
+
 }
 
 .menuTwoSideBoxContentOrange {
@@ -882,7 +979,7 @@ ul li:hover ul  li {
 }
 
 #trafficBoxResult {
-	margin-bottom: 45px;
+	margin-bottom: 7%;
 }
 
 #plus {
@@ -919,9 +1016,8 @@ ul li:hover ul  li {
 #menuTwoSideMenuLeft,
 #menuTwoSideMenuLeftInfo {
 	width: 33%;
-	position: relative;
-	top: 130px;
 	float: right;
+
 }
 
 #menuTwoSideMenuLeft {
@@ -934,25 +1030,48 @@ ul li:hover ul  li {
 }
 
 .menuTwoImgContainer {
-	margin: 0 auto;
-	width: 90%;;
+	width: 90%;
+	min-width: 300px;
+
+	max-width: 300px;
 	height: 180px;
 	text-align: center;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
+#menuTwoSideImgTop,
 #menuTwoSideImg {
-	width: 50%;
+	width: 70%;
+	margin-bottom:10px;
+
+}
+
+#menuTwoSideImgTopSmall,
+#menuTwoSideImgTop {
+	margin-top: 150px;
 	margin-bottom:10px;
 }
 
-#menuTwoSideImgSmall {
-	width: 80%;
+#menuTwoSideImgTopSmall {
+	width: 85%;
 	border-radius: 4px;
+}
+
+#menuTwoSideImgSmall {
+	width: 90%;
+	border-radius: 4px;
+	margin-top: 40%;
 }
 
 #menuTwoSideImgBig {
 	width: 30%;
+}
+
+#menuTwoSideImgSpecial {
+	margin-bottom: 7%;
+	width: 100%;
 }
 
 #menuTwoSideImgInfo {
@@ -971,6 +1090,8 @@ ul li:hover ul  li {
 #menuTwoTextHeader {
 	margin-bottom: 10px;
 }
+
+
 
 .menuTwoTextPara,
 .menuTwoTextParaDefinition {
@@ -1013,6 +1134,7 @@ ul li:hover ul  li {
 	clear: left;
 	position: relative;
 	top: 30px;
+	min-width: 1200px;
 }
 
 .menuTwoBreakerBackground3 {
@@ -1092,8 +1214,6 @@ ul li:hover ul  li {
 	font-size: 18px;
 }
 
-
-
 #menuTwoBreakerTextBoxResult {
 	line-height: 300px;
 	vertical-align: middle;
@@ -1114,6 +1234,8 @@ ul li:hover ul  li {
 	margin: 60px 0;
 	float: right;
 	line-height: 240px;
+	width: 100%;
+	min-width: 800px;
 }
 
 .menuTwoBreakerQuote1Big {
@@ -1136,8 +1258,8 @@ ul li:hover ul  li {
 .menuTwoBreakerQuoteTextContainer {
 	vertical-align: middle;
 	display: inline-block;
-	width: 90%;
-	margin-left: 5%;
+	min-width: 1200px;
+
 }
 
 #menuTwoBreakerQuoteText,
@@ -1245,7 +1367,6 @@ ul li {
 #counterContainer3,
 #counterContainer4  {
 	float: left;
-	width:220px;
 	text-align: center;
 	color: black;
 	position: relative;
@@ -1254,7 +1375,7 @@ ul li {
 	padding: 30px 0;
 	font-size: 30px;
 	background: #ff1493;
-	height: 265px;
+	height: 100%;
 
 }
 
@@ -1272,9 +1393,12 @@ ul li {
 
 #counterText {
 	width: 85%;
-	margin-left: 10%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 	line-height: 1.3;
+	clear: left;
+
 }
 
 #counterImg {
@@ -1283,37 +1407,45 @@ ul li {
 }
 
 #counterImgChild {
-	width: 40%;
+	width: 30%;
 	margin-left: 13%;
 }
 
-#brideCounterExtra {
-	position: absolute;
-	bottom: 42%;
-	left: 29%;
-	font-size: 22px;
+#counterExtraContainer2  {
+	margin-left: 36%;
 }
 
-#moneyCounterExtra1 {
-	position: absolute;
-	bottom: 42%;
-	left: 40%;
-	font-size: 22px;
+#counterExtraContainer3 {
+	margin-left: 30%;
 }
 
-#moneyCounterExtra2 {
-	position: absolute;
-	bottom: 41%;
-	left: 57%;
-	font-size: 24px;
+#counterExtraContainer4 {
+	margin-left: 36%;
 }
 
-#percentCounterExtra {
-	position: absolute;
-	bottom: 41.5%;
-	left: 57%;
-	font-size: 24px;
+#childCounter,
+#brideCounter,
+#profitCounter,
+#percentCounter {
+	float: left;
+	width: 15%;
 }
+
+#childCounterExtra1,
+#brideCounterExtra1,
+#profitCounterExtra1,
+#profitCounterExtra2,
+#percentCounterExtra1 {
+	float: left;
+}
+
+#childCounterExtra1,
+#percentCounterExtra1 {
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+
 
 /* SLAVE PRICE ANIMATION BAR */
 
@@ -1418,7 +1550,9 @@ ul li {
 	font-size: 18px;
 }
 
-footer {
+/* FOOTER */
+
+#footerPlaceHolder {
   background: #333333;
   height: 200px;
 	position: relative;

@@ -1,28 +1,26 @@
 // - If you are at the footer When the first image switch happens it automatically jump up to the head //
 $(document).ready(function() {
   let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter"), profitCounterEl = $("#profitCounter"), percentCounterEl = $("#percentCounter")
-  let documentEl = $(document);
-  let windowEl = $(window);
-
-  let counter = 0, counter2 = 0, counter3 = 0, counter4 = 0;
-  let scrollCountActivated = false, scrollCountActivated2 = false, scrollCountActivated3 = false, scrollCountActivated4 = false
-  let interval, interval2, interval3, interval4;
+  let documentEl = $(document), windowEl = $(window)
 
   documentEl.on("scroll", function() {
+    let counter = 0, counter2 = 0, counter3 = 0, counter4 = 0;
+    let scrollCountActivated = false, scrollCountActivated2 = false, scrollCountActivated3 = false, scrollCountActivated4 = false
+    let interval, interval2, interval3, interval4;
 
     if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
       scrollCountActivated = true;
       function startCounter() {
         childCounterEl.html(counter);
-        if (counter < 5250) {
+        if (counter < 35) {
           counter++;
         } else {
           clearInterval(interval)
         }
       }
-      for (let i = 0; i < 50; i++) {
-        interval = setInterval(startCounter, 1)
-      }
+
+      interval = setInterval(startCounter, 60)
+
     }; // END OF CHILD IF STATEMENT //
 
      if (documentEl.scrollTop() > 100 & scrollCountActivated2 === false) {
@@ -35,7 +33,7 @@ $(document).ready(function() {
            clearInterval(interval2)
          }
         }
-       for (let i = 0; i < 100; i++) {
+       for (let i = 0; i < 150; i++) {
          interval2 = setInterval(startCounter, 1)
        }
        }; // END OF BRIDE IF  STATEMENT //
@@ -201,16 +199,38 @@ $(document).ready(function() {
     arrowText8.removeClass("arrowTextActive");
   });
 
+// FUNDRAISING APPREHENSION ANIMATION//
+  windowEl.scroll(function (event) {
+    let one = $("#sideAnimationBar1"), two = $("#sideAnimationBar2"), three = $("#sideAnimationBar3");
+    let four = $("#sideAnimationBar4"), five = $("#sideAnimationBar5"), six = $("#sideAnimationBar6"), seven = $("#sideAnimationBar7");
+    let activated = false, scroll = windowEl.scrollTop();
+
+
+    if (scroll > 2000 & activated === false) {
+      activated = true;
+      console.log('hello')
+
+      one.animate( {width: "700px"}, 4000);
+      two.animate( {width: "650px"}, 4000);
+      three.animate( {width: "480px"}, 4000);
+      four.animate( {width: "310px"}, 4000);
+      five.animate( {width: "220px"}, 4000);
+      six.animate( {width: "175"}, 4000);
+      seven.animate( {width: "152"}, 4000)
+
+    }
+  });
+
 
 
   // SLAVE PRICE ANIMATION //
   windowEl.scroll(function (event) {
-    let scroll = windowEl.scrollTop();
     let priceBar1 = $(".priceBarAnimate1"),priceBar2 = $(".priceBarAnimate2");
     let priceBar3 = $(".priceBarAnimate3"), priceBar4 = $(".priceBarAnimate4");
-    let priceBarText = $(".priceBarTextHide");
+    let priceBarText = $(".priceBarTextHide"), scrollPriceActivated = false;
 
-    if (scroll > 800 & scrollPriceActivated === false) {
+
+    if (scroll > 200 & scrollPriceActivated === false) {
       scrollPriceActivated = true;
       priceBar1.animate( {width: "180px"}, 2000);
       priceBarText.addClass("priceBarTextShow");
