@@ -34,7 +34,7 @@ $(document).ready(function() {
            clearInterval(interval2)
          }
         }
-       for (let i = 0; i < 100; i++) {
+       for (let i = 0; i < 150; i++) {
          interval2 = setInterval(startCounter, 1)
        }
        }; // END OF BRIDE IF  STATEMENT //
@@ -61,6 +61,9 @@ $(document).ready(function() {
              counter4++;
            } else {
              clearInterval(interval4)
+           }
+           for (let i = 0; i < 10; i++) {
+             interval2 = setInterval(startCounter, 1)
            }
          };
          interval4 = setInterval(startCounter,1)
