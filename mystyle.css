@@ -1503,13 +1503,11 @@ ul li {
 }
 
 .whiteSpace {
-	height: 300px;
-	float: left;
+	height: 150px;
+	clear: both;
 } /* Dummy class */
 
-.sectionThree {
-	height: 300px;
-}
+
 
 #sourcesHeader1,
 #sourcesHeader2,
@@ -1551,7 +1549,7 @@ ul li {
 
 /* FOOTER */
 
-#footerPlaceHolder {
+#footer {
   background: #333333;
   height: 200px;
 	position: relative;
