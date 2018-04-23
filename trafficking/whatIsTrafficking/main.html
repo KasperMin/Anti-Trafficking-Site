@@ -2,67 +2,28 @@
 <html>
 <head>
 
-  <title>Kasper Simonsen</title>
-  <link rel="icon"   href="" />
+  <title>
+    Kasper Simonsen
+  </title>
+  <link rel="icon"   href="../../assets/ksLogo.ico" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JQUERY NEEDS TO LOAD BEFORE CYCLE2 LIBRARY -->
   <script type="text/javascript" src="https://malsup.github.io/min/jquery.cycle2.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../../mystyle.css" />
-
+  <script>
+    $(document).ready(function(){
+      $("#navPlaceHolder").load("../../navBar.html");
+    })
+  </script>
 </head>
 
 <body>
   <header>
-    <div class="topHeader">
+    <div id="navPlaceHolder">
     </div>
-
-    <img src="../../assets/ks_logo.svg" id="logo" />
-
-    <nav class="navigationBar">
-      <div id="navContainer">
-        <ul class="navUl">
-          <li class="navLi"><a href="../../index.html" class="noDropBar">Home</a></li>
-          <li class="navLi"><a href="" class="noDropBar">About</a></li>
-          <li class="navLi"><a class="navHeader">Traficking</a>
-
-            <ul>
-              <li class="navLiLi"><a href="main.html">What is Human Trafficking?</a></li>
-              <li class="navLiLi"><a>Who trafficks?</a></li>
-              <li class="navLiLi"><a>How to stop trafficking?</a></li>
-            </ul>
-
-          </li>
-          <li class="navLi"><a class="navHeader">Cambodia</a>
-            <ul>
-              <li class="navLiLi"><a>History</a></li>
-              <li class="navLiLi"><a>Solutions</a></li>
-            </ul>
-          </li>
-          <li class="navLi"><a class="navHeader">Thailand</a>
-            <ul>
-              <li class="navLiLi"><a>History</a></li>
-              <li class="navLiLi"><a>Solutions</a></li>
-            </ul>
-          </li>
-          <li class="navLi"><a class="navHeader">Fundraising</a>
-            <ul>
-              <li class="navLiLi"><a href="./fundraising/sponsorship/main.html">Sponsorship</a></li>
-              <li class="navLiLi"><a>Foundation Grants</a></li>
-            </ul>
-          </li>
-          <li class="navLi"><a class="navHeader">Blossom</a>
-            <ul>
-              <li class="navLiLi"><a>Case Background</a></li>
-              <li class="navLiLi"><a href="./blossom/mission/main.html">Vision and Mission</a></li>
-              <li class="navLiLi"><a>Sponsorship</a></li>
-              <li class="navLiLi"><a href="./blossom/culture/main.html">Framing Your Culture</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <img src="../../assets/ksLogo.svg" id="logo" />
   </header>
 
   <section>
@@ -276,11 +237,64 @@
     </div>
   </section>
 
-  <section class="whiteSpaceNormal">
+  <section>
+    <div class="whiteSpace">
+    </div>
   </section>
 
   <footer>
+    <div id="footer">
+      <div id="contactContainer">
+        <img src="../../assets/ksLogo.svg" id="logoFooter" />
+      </div>
+      <div id="contactContainer">
+        <h5 id="contactHeader">
+          Contact
+        </h5>
+        <div >
+          Ingemannsvej 3, 8850 Bjerringbro
+        </div>
+        <div >
+          Denmark
+        </div>
+        <div >
+          Phone: (+45) 93 84 71 61
+        </div>
+        <div>
+          E-mail: kaspermsimonsen@gmail.com
+        </div>
+      </div>
+      <div id="contactContainer">
+        <h5 id="contactHeader">
+          Latest Post
+        </h5>
+        <div id="postText"><a href="./trafficking/whatIsTrafficking/sexTraffic.html">
+          Human Trafficking and Sex Trafficking Mix-up
+        </a></div>
+        <div id="contractTextSmall">
+          Fri Apr 20, by Kasper Simonsen
+        </div>
+      </div>
+      <div id="contactContainer">
+        <h5 id="contactHeaderMedia">
+          Social Media
+        </h5>
+          <div class="socialIconsContainer">
+            <a href="#" class="fa fa-facebook" ></a>
+            <a href="#" class="fa fa-twitter" ></a>
+            <a href="#" class="fa fa-google" ></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+      </div>
+      <div id="finalLine">
+        <div id="finalLineText">
+          Powered by Simonsen Design®
+        </div>
+      </div>
+
+    </div>
   </footer>
+
 
   <script src="../../main.js"></script>
 </body>
