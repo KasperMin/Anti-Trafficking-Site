@@ -941,23 +941,23 @@ ul li:hover ul  li {
 
 .menuTwoSideBoxContentGreen {
 	background: #42bf8f;
-	height: 100%;
+	height: 650px;
 }
 
 .menuTwoSideBoxContentGrey {
 	background: #333333;
-	height: 100%;
+	height: 650px;
 }
 
 .menuTwoSideBoxContentPink {
 	background: #ff1493;
-	height: 100%;
+	height: 650px;
 
 }
 
 .menuTwoSideBoxContentOrange {
 	background: #ff8b10;
-	height: 100%;
+	height: 650px;
 }
 
 
@@ -1231,10 +1231,10 @@ ul li:hover ul  li {
 	background: #3E5DFF; /* blue */
 	height: 240px;
 	margin: 60px 0;
-	float: right;
+	clear: both;
 	line-height: 240px;
 	width: 100%;
-	min-width: 800px;
+
 }
 
 .menuTwoBreakerQuote1Big {
@@ -1259,6 +1259,7 @@ ul li:hover ul  li {
 	vertical-align: middle;
 	display: inline-block;
 	margin-left: 5%;
+
 }
 
 #menuTwoBreakerQuoteText,
@@ -1266,8 +1267,8 @@ ul li:hover ul  li {
 	color: white;
 	line-height: 1.5;
 	margin-bottom: 7px;
-	min-width: 800px;
-
+	min-width: 1000px;
+	max-width: 1200px;
 }
 
 #menuTwoBreakerQuoteText2 {
