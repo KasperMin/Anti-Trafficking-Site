@@ -10,7 +10,12 @@
   <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../../mystyle.css" />
-
+  <script>
+  $(document).ready(function() {
+    $("#navPlaceHolder").load("../../navBar.html");
+    $("#footerPlaceHolder").load("../../footer.html");
+    })
+  </script>
 </head>
 
 <body>
@@ -101,11 +106,6 @@
     </div>
   </footer>
 
-  <script>
-  $(document).ready(function(){
-    $("#footerPlaceHolder").load("../../footer.html");
-    })
-  </script>
   <script src="../../main.js">
   </script>
   <body>
