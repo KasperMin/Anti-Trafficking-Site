@@ -20,7 +20,7 @@ $(document).ready(function() {
         }
       }
 
-      interval = setInterval(startCounter, 60)
+      interval = setInterval(startCounter, 30)
 
     }; // END OF CHILD IF STATEMENT //
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
            clearInterval(interval2)
          }
         }
-       for (let i = 0; i < 150; i++) {
+       for (let i = 0; i < 100; i++) {
          interval2 = setInterval(startCounter, 1)
        }
        }; // END OF BRIDE IF  STATEMENT //

@@ -3,7 +3,7 @@
 <head>
 
   <title>Kasper Simonsen</title>
-  <link rel="icon"   href="ksLogo.ico" />
+  <link rel="icon"   href="../../ksLogo.ico" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JQUERY NEEDS TO LOAD BEFORE CYCLE2 LIBRARY -->
   <script type="text/javascript" src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
@@ -95,14 +95,18 @@
     <img src="../../assets/ksLogo.svg" id="logo" />
   </section>
 
-  <footer id="#footerPlaceHolder">
+  <footer>
+    <div id="#footerPlaceHolder">
+
+    </div>
   </footer>
 
   <script>
   $(document).ready(function(){
     $("#footerPlaceHolder").load("../../footer.html");
-  })
+    })
   </script>
-  <script src="../../main.js"></script>
+  <script src="../../main.js">
+  </script>
   <body>
 </html>
