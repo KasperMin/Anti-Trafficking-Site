@@ -1255,10 +1255,10 @@ ul li:hover ul  li {
 }
 
 .menuTwoBreakerQuoteTextContainer {
+	width: 90%;
 	vertical-align: middle;
 	display: inline-block;
-	min-width: 1200px;
-
+	margin-left: 5%;
 }
 
 #menuTwoBreakerQuoteText,
@@ -1266,6 +1266,8 @@ ul li:hover ul  li {
 	color: white;
 	line-height: 1.5;
 	margin-bottom: 7px;
+	min-width: 800px;
+
 }
 
 #menuTwoBreakerQuoteText2 {
