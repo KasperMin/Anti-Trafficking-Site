@@ -292,7 +292,7 @@ ul li:hover ul  li {
 }
 
 .introOneBoxContainer {
-	height: 200px
+	height: 250px
 }
 
 .introOneBox {
@@ -304,12 +304,11 @@ ul li:hover ul  li {
 	color: white;
 	display: inline-block;
 	position: relative;
-	bottom: 250px;
+	bottom: 220px;
 }
 
 #introOneBoxHeader {
 	position: relative;
-	bottom: 20px;
 }
 
 .line {

@@ -1,11 +1,12 @@
 // - If you are at the footer When the first image switch happens it automatically jump up to the head //
 $(document).ready(function() {
-  let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter"), profitCounterEl = $("#profitCounter"), percentCounterEl = $("#percentCounter")
   let documentEl = $(document), windowEl = $(window)
+  let scrollCountActivated = false, scrollCountActivated2 = false, scrollCountActivated3 = false, scrollCountActivated4 = false
+
 
   documentEl.on("scroll", function() {
+    let childCounterEl = $("#childCounter"), brideCounterEl = $("#brideCounter"), profitCounterEl = $("#profitCounter"), percentCounterEl = $("#percentCounter")
     let counter = 0, counter2 = 0, counter3 = 0, counter4 = 0;
-    let scrollCountActivated = false, scrollCountActivated2 = false, scrollCountActivated3 = false, scrollCountActivated4 = false
     let interval, interval2, interval3, interval4;
 
     if (documentEl.scrollTop() > 100 & scrollCountActivated === false) {
@@ -199,11 +200,13 @@ $(document).ready(function() {
     arrowText8.removeClass("arrowTextActive");
   });
 
+
 // FUNDRAISING APPREHENSION ANIMATION//
+  let activated = false
   windowEl.scroll(function (event) {
     let one = $("#sideAnimationBar1"), two = $("#sideAnimationBar2"), three = $("#sideAnimationBar3");
     let four = $("#sideAnimationBar4"), five = $("#sideAnimationBar5"), six = $("#sideAnimationBar6"), seven = $("#sideAnimationBar7");
-    let activated = false, scroll = windowEl.scrollTop();
+    let scroll = windowEl.scrollTop();
 
 
     if (scroll > 2000 & activated === false) {
