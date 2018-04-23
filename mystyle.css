@@ -529,7 +529,8 @@ ul li:hover ul  li {
 	width: 85%;
 	background: #FF1493;
 	margin: 60px 0;
-	float: right;
+	position: relative;
+	left: 15%;
 	clear:right;
 }
 
@@ -553,6 +554,7 @@ ul li:hover ul  li {
 #menuOneBreakerQuoteText {
 	color: white;
 	line-height: 1.5;
+	min-width: 900px;
 }
 
 #centerImg,
@@ -646,6 +648,7 @@ ul li:hover ul  li {
 }
 
 /* SIDE MENU */
+
 
 .sideMenuContainer,
 .sideMenuContainerSocial {
@@ -978,7 +981,7 @@ ul li:hover ul  li {
 }
 
 #trafficBoxResult {
-	margin-bottom: 7%;
+	margin-bottom: 15%;
 }
 
 #plus {
@@ -1069,7 +1072,6 @@ ul li:hover ul  li {
 }
 
 #menuTwoSideImgSpecial {
-	margin-bottom: 7%;
 	width: 100%;
 }
 
@@ -1267,8 +1269,8 @@ ul li:hover ul  li {
 	color: white;
 	line-height: 1.5;
 	margin-bottom: 7px;
-	min-width: 1000px;
-	max-width: 1200px;
+	min-width: 1100px;
+
 }
 
 #menuTwoBreakerQuoteText2 {
