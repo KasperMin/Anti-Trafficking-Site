@@ -17,7 +17,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 * {
@@ -95,6 +94,7 @@ nav {
 	z-index: 1000;
 	font-size: 15px;
 	font-weight: bold;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
 
 }
 
@@ -265,6 +265,7 @@ ul li:hover ul  li {
 	margin-bottom: 0px;
 }
 
+.topTitleBarTextHome,
 .topTitleBarText1,
 .topTitleBarText2 {
 	margin-left: 3%;
@@ -272,6 +273,7 @@ ul li:hover ul  li {
 	z-index: 1000;
 	color: white;
 	display: inline-block;
+	font-family: Impact;
 }
 
 .topTitleBarText2 {
@@ -284,12 +286,7 @@ ul li:hover ul  li {
 	color:#696969;
 }
 
-.topTitleBarTextBack {
-	margin-left: 30px;
-	float: left;
-	text-decoration: none;
-	color: white;
-}
+
 
 .introOneBoxContainer {
 	height: 250px
@@ -321,6 +318,7 @@ ul li:hover ul  li {
 	margin: 15px auto;
 	line-height: 1.4;
 	text-align: justify;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
 
 }
 
@@ -328,6 +326,7 @@ ul li:hover ul  li {
 #introTextImgContainer {
 	width: 70%;
 	margin: 15px auto;
+
 }
 
 #introTextImg {
@@ -362,6 +361,8 @@ ul li:hover ul  li {
 .introContainer2 {
 	margin: 30px auto;
 	text-align: center;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+
 }
 
 #headerLineLeft,
@@ -407,6 +408,7 @@ ul li:hover ul  li {
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
 
 }
 
@@ -490,6 +492,8 @@ ul li:hover ul  li {
 	color: #696969;
 	padding: 15px;
 	display: inline-block;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+
 }
 
 .menuOneMainTextContainerHorizontal {
@@ -499,7 +503,7 @@ ul li:hover ul  li {
 .menuOneMainTextContainerRight {
 	margin-right: 5%;
 	float: right;
-	clear: both;
+
 }
 
 .menuOneMainTextPara {
@@ -523,6 +527,7 @@ ul li:hover ul  li {
 	list-style-type: decimal;
 }
 
+#menuOneTextBreakerRightExtra,
 #menuOneTextBreakerRight {
 	height: 250px;
 	line-height: 250px;
@@ -532,6 +537,10 @@ ul li:hover ul  li {
 	position: relative;
 	left: 15%;
 	clear:right;
+}
+
+#menuOneTextBreakerRightExtra {
+	margin-top: 80px;
 }
 
 #menuOneTextBreakerLeft {
@@ -650,28 +659,21 @@ ul li:hover ul  li {
 /* SIDE MENU */
 
 
-.sideMenuContainer,
-.sideMenuContainerSocial {
+.sideMenuContainer {
 	float: right;
 	width: 30%;
 	margin-right: 1%;
+	font-family: Impact, Georgia, serif;
+
 }
 
-.sideMenuHeader,
-.sideMenuHeaderSocial {
+.sideMenuHeader {
 	text-align: center;
 	background: #42bf8f;
 	padding: 20px;
 }
 
-.sideMenuContainerSocial {
-	border: 1px solid;
-	text-align:center;
-	float: left;
-	position: relative;
-	bottom: 140px;
 
-}
 
 .sideMenuHeaderSocial {
 	background: #3B5998;
@@ -705,6 +707,7 @@ ul li:hover ul  li {
 	left: 8%;
 
 }
+
 
 .sideMenuBorderShadow {
 	box-shadow: 5px 10px;
@@ -906,6 +909,8 @@ ul li:hover ul  li {
 	/* color: #696969; */
 	max-width: 800px;
 	min-width: 700px;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+	font-family: ;
 }
 
 .menuTwoTextContainerRight {
@@ -915,7 +920,10 @@ ul li:hover ul  li {
 	padding-right:3%;
 	border-right: 5px solid #696969;
 	/* color: #696969; */
-		max-width: 800px;
+	max-width: 800px;
+	min-width: 700px;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+
 }
 
 #menuTwoTextHeader {
@@ -1525,6 +1533,8 @@ ul li {
 	margin-bottom: 15px;
 	background: #3E5DFF;
 	padding: 10px;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+
 }
 
 #sourcesHeader2 {
@@ -1560,6 +1570,8 @@ ul li {
 	position: relative;
 	clear:both;
 	color: white;
+	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
+
 }
 
 #logoFooter {
