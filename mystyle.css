@@ -316,7 +316,7 @@ ul li:hover ul  li {
 #introText {
 	width: 70%;
 	margin: 15px auto;
-	line-height: 1.4;
+	line-height: 1.5;
 	text-align: justify;
 	font-family: "Didot LT STD", "Hoefler Text", Georgia, serif;
 
@@ -793,7 +793,7 @@ ul li:hover ul  li {
 	border-radius: 2px;
 	cursor:pointer;
 	background: white;
-	font-family: "Gill Sans" !important;
+	font-family: "Gill Sans","Didot LT STD", "Hoefler Text", Georgia, serif;
 	border: 2px solid #3E5DFF;
 }
 
